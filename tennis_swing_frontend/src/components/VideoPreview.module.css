@@ -1,0 +1,15 @@
+.wrap {
+  margin-top: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  background: #000;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 320px;
+}

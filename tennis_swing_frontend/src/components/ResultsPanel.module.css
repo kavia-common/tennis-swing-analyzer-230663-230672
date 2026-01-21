@@ -1,0 +1,148 @@
+.section {
+  width: 100%;
+  max-width: 1080px;
+  margin: 18px auto 0;
+  padding: 0 18px 36px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.help {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.badge {
+  border-radius: 14px;
+  padding: 12px 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.badgeLabel {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+}
+
+.badgeValue {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
+.tone_primary {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.10), rgba(255, 255, 255, 1));
+}
+
+.tone_amber {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.14), rgba(255, 255, 255, 1));
+}
+
+.tone_success {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.14), rgba(255, 255, 255, 1));
+}
+
+.details {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(249, 250, 251, 0.8);
+  padding: 12px;
+}
+
+.detailsTitle {
+  font-size: 12px;
+  color: var(--color-muted);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.detailsBody {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.empty {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.stateRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.stateTitle {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.stateHint {
+  margin-top: 4px;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 3px solid rgba(37, 99, 235, 0.18);
+  border-top-color: var(--color-primary);
+  animation: spin 0.9s linear infinite;
+  margin-top: 2px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorBox {
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.08);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.errorTitle {
+  font-weight: 900;
+  color: var(--color-error);
+}
+
+.errorMsg {
+  margin-top: 6px;
+  color: rgba(17, 24, 39, 0.85);
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .badges {
+    grid-template-columns: 1fr;
+  }
+}
